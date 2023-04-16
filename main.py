@@ -76,6 +76,8 @@ STICKER = [
       STKR6,
       STKR7,
       STKR8,
+      STKR9,
+      STKR10,
 ]
 
 async def is_served_user(user_id: int) -> bool:
@@ -318,7 +320,7 @@ async def get_st(_, msg: Message):
     users = len(await get_served_users())
     chats = len(await get_served_chats())
     await msg.reply_photo(
-        photo="https://te.legra.ph/file/2d5b054acddf865d4d83e.png",
+        photo="https://te.legra.ph/file/86296f13a3aedef58335b.png",
         caption=f"ᴛᴏᴛᴀʟ sᴛᴀᴛs ᴏғ {BOT_NAME}\n\n➻ **ᴄʜᴀᴛs :** {chats}\n➻ **ᴜsᴇʀs :** {users}",
     )
 
@@ -334,7 +336,7 @@ async def ping(client, message: Message):
     ms = (datetime.now()-start).microseconds / 1000
     await message.reply_photo(
         photo=random.choice(PHOTO),
-        caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n<b>||мαdє ωιтн ❣️ ву [OWNER BABY](https://t.me/{OWNER_USERNAME})||</b>",
+        caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n<b>||мαdє ωιтн ❣️ ву [『 💘 ᴏᴡɴᴇʀ ʙᴀʙy 💕 』](https://t.me/{OWNER_USERNAME})||</b>",
         reply_markup=InlineKeyboardMarkup(PNG_BTN),
     )
 
@@ -577,5 +579,5 @@ async def vickprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ɴᴏᴡ ғᴜᴄᴋ ᴏғғ! ᴀɴᴅ ɢᴏ ᴛᴏ @Wᴇ_ʀғʀɪᴇɴᴅs ʙɪᴛᴄʜ!!")      
+print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ɴᴏᴡ ғᴜᴄᴋ ᴏғғ! ᴀɴᴅ ɢᴏ ᴛᴏ @DX_info ʙɪᴛᴄʜ!!")      
 bot.run()
